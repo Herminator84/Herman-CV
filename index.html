@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herman Engdahl - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CSS för ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .skill-bar-bg {
+            background-color: #e5e7eb; /* Lighter gray for skill bar background */
+        }
+        .skill-bar-fill {
+            background-color: #3b82f6; /* Blue for skill bar fill */
+            transition: width 0.5s ease-in-out;
+        }
+        /* Custom style for skill tags */
+        .skill-tag {
+            display: inline-block;
+            background-color: #dbeafe; /* Light blue background */
+            color: #1e40af; /* Darker blue text */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px; /* Fully rounded corners */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500; /* font-medium */
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            white-space: nowrap; /* Prevent breaking in the middle of a tag */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 sm:p-8 md:p-10 flex flex-col sm:flex-row items-center justify-between rounded-t-lg">
+            <div class="text-center sm:text-left mb-4 sm:mb-0">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-1">Herman Engdahl</h1>
+                <p class="text-xl sm:text-2xl font-light">Business Development Manager</p>
+            </div>
+            <div class="flex items-center space-x-4 text-sm sm:text-base">
+                <!-- Se till att din bildfil, t.ex. Herman.png, ligger i samma mapp som denna HTML-fil -->
+                <img src="Herman.png" alt="Herman Engdahl" class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 sm:p-8">
+            <div class="md:col-span-1 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Kontakt</h2>
+                <ul class="text-gray-700 space-y-2">
+                    <li><i class="fa-solid fa-phone text-blue-600 mr-2"></i><strong class="font-medium">Telefon:</strong> 0727-111109</li>
+                    <li><i class="fa-solid fa-envelope text-blue-600 mr-2"></i><strong class="font-medium">E-post:</strong> herman.engdahl@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i><strong class="font-medium">Ort:</strong> Örgryte, Göteborg</li>
+                    <li><i class="fa-brands fa-linkedin text-blue-600 mr-2"></i><strong class="font-medium">LinkedIn:</strong> <a href="https://www.linkedin.com/in/hermanengdahl/" target="_blank" class="text-blue-600 hover:underline">Herman.engdahl</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Målsättning & Profil</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Jag vill utveckla mig inom digital marknadsföring, försäljning, e-handelsutveckling, ledarskap och komplex affärsutveckling. Som en driven och resultatinriktad Business Development Manager med en gedigen bakgrund inom retail och SaaS-försäljning, brinner jag för att identifiera och utveckla nya affärsmöjligheter. Med ett starkt intresse för dataanalys, e-handelsutveckling, IT-lösningar, **ett brinnande intresse för AI:s påverkan på e-handel och en stark tro på datadriven beslutsfattning**, kombinerar jag strategisk insikt med praktisk erfarenhet för att maximera tillväxt och kundrelationer. Jag trivs i en ledande roll med frihet under ansvar och är redo för nya utmaningar.
+                </p>
+                <!-- Call to Action -->
+                <p class="text-center mt-4 p-3 bg-blue-100 text-blue-800 rounded-md shadow-sm">
+                    <strong class="font-semibold">Är du redo att ta nästa steg?</strong> Kontakta mig gärna för en djupare diskussion om hur mina erfarenheter kan bidra till er framgång.
+                    <a href="mailto:herman.engdahl@gmail.com" class="text-blue-600 hover:underline font-medium ml-2">Skicka ett mail här!</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Arbetslivserfarenhet</h2>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Head of Back Office</h3>
+                <p class="text-blue-600 font-medium">TestSeek | 2012-09 – Idag</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Leda och hantera ett internationellt back office-team om fem medarbetare.</li>
+                    <li>Säkerställa effektiv produktion med hög kvalitet genom utbildning, processimplementering och personalhantering.</li>
+                    <li>Ansvara för rapportering och analys av big data med hjälp av komplexa egenutvecklade verktyg.</li>
+                    <li>Utveckla och effektivisera IT-system för att förbättra arbetsflöden.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Deltidsanställd under studier</h3>
+                <p class="text-blue-600 font-medium">Telia Butik Backaplan, Göteborg | 2010-05 – 2012-09</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Arbetade med försäljning i butik.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Deltidsanställd under studier</h3>
+                <p class="text-blue-600 font-medium">Clas Ohlsson, Frölunda Torg | 2009-09 – 2010-04</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Arbetade med försäljning i butik.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Data quality controller</h3>
+                <p class="text-blue-600 font-medium">FMP Publishing AB | 2008-10 – 2009-09</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Ansvarade för datakvalitetskontroll.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Merchandiser (SanDisk)</h3>
+                <p class="text-blue-600 font-medium">Clear Communication Sweden AB | 2008-04 – 2008-09</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Arbetade som merchandiser för SanDisk.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Säljare och avdelningsansvarig för kontorsprodukter/mobila tjänster</h3>
+                <p class="text-blue-600 font-medium">Media Markt, Göteborg | 2006-10 – 2008-05</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Ansvarade för försäljning och avdelningsansvar för kontorsprodukter och mobila tjänster.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Säljare och exponeringsansvarig</h3>
+                <p class="text-blue-600 font-medium">Telia Butik Backaplan, Göteborg | 2006-01 – 2006-10</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                    <li>Ansvarade för försäljning och exponering i butik.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Övriga Förtroendeuppdrag</h2>
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-handshake text-gray-600 mr-3"></i>Vice Ordförande / Kassör</h3>
+                <p class="text-blue-600 font-medium">BRF Lilla Danska Vägen 14 | 2014 – Idag</p>
+            </div>
+        </div>
+
+        <div class="p-6 sm:p-8 bg-gray-50">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Färdigheter</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Affärsutveckling</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Dataanalys</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">SaaS Försäljning</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">E-handelsutveckling</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">IT-system Effektivisering</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Ledarskap</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">SEO Online Marketing</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Google Analytics</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">HubSpot Marketing Automation</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Microsoft Dynamics</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <!-- Ny skill bar för Programvaruutveckling -->
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Programvaruutveckling</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-700 mb-2">Adobe Photoshop</p>
+                    <div class="w-full skill-bar-bg rounded-full h-3">
+                        <div class="skill-bar-fill h-full rounded-full" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <p class="font-medium text-gray-700 mb-2">Övriga Datorkunskaper:</p>
+                <p class="text-gray-700 mb-2">Goda datorkunskaper överlag, behärskar program som Word, Excel, PowerPoint.</p>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="skill-tag">AdWords Certifierad</span>
+                    <span class="skill-tag">Bing Ads Accredited</span>
+                    <span class="skill-tag">Youtube Marketing</span>
+                    <span class="skill-tag">Google Analytics</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Utbildning</h2>
+            <!-- Full Stack Development Course from Lexicon -->
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-graduation-cap text-gray-600 mr-3"></i>Full Stack Development Course</h3>
+                <p class="text-blue-600 font-medium">Lexicon | 2024 maj – 2025 maj (1 år)</p>
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2 ml-4">
+                    <li>Grundläggande kunskaper inom webbutveckling med fokus på både front-end och back-end.</li>
+                    <li>Lärde mig om språk och ramverk, med specialisering inom Java, samt:
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">SQL (databaser)</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Git</span>
+                            <!-- Lägg till fler skill-tags här vid behov -->
+                        </div>
+                    </li>
+                    <li>Utvecklat förståelse för applikationslogik, databasintegration och hela utvecklingscykeln.</li>
+                </ul>
+            </div>
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-graduation-cap text-gray-600 mr-3"></i>Digital Marketing & Sales Analytics</h3>
+                <p class="text-blue-600 font-medium">IHM Business School, Göteborg | 2017 – 2019 (2 år)</p>
+            </div>
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-graduation-cap text-gray-600 mr-3"></i>Strategisk Inköpare</h3>
+                <p class="text-blue-600 font-medium">Företagsekonomiska Institutet, (FEI) | 2010 – 2011 (2 år)</p>
+            </div>
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-graduation-cap text-gray-600 mr-3"></i>Samhällsvetenskapligt basår</h3>
+                <p class="text-blue-600 font-medium">Arbetarrörelsens Folkhögskola, Järntorget, Göteborg | 2009 – 2010 (1 år)</p>
+            </div>
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-graduation-cap text-gray-600 mr-3"></i>Senior year High School</h3>
+                <p class="text-blue-600 font-medium">Libby High School, Libby, USA | 2002 – 2003 (1 år)</p>
+            </div>
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-graduation-cap text-gray-600 mr-3"></i>Samhällsvetenskapligt program, inriktning ekonomi</h3>
+                <p class="text-blue-600 font-medium">Peder Skrivares Gymnasium, Varberg | 2000 – 2004 (3 år)</p>
+            </div>
+        </div>
+
+        <div class="p-6 sm:p-8 bg-gray-50 rounded-b-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Språk</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li><i class="fa-solid fa-language text-gray-600 mr-2"></i>Svenska: Modersmål</li>
+                <li><i class="fa-solid fa-language text-gray-600 mr-2"></i>Engelska: Flytande i tal och skrift</li>
+                <li><i class="fa-solid fa-language text-gray-600 mr-2"></i>Franska: Goda kunskaper</li>
+                <li><i class="fa-solid fa-language text-gray-600 mr-2"></i>Tyska: Baskunskaper</li>
+            </ul>
+        </div>
+
+        <div class="p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Övrigt</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li><i class="fa-solid fa-car text-gray-600 mr-2"></i>Innehar B Körkort och egen bil.</li>
+            </ul>
+        </div>
+
+        <div class="text-center p-6 sm:p-8 text-gray-700">
+            <p class="font-medium text-lg">Referenser lämnas på begäran.</p>
+        </div>
+
+        <footer class="p-6 sm:p-8 bg-gray-700 text-white text-center text-sm rounded-b-lg mt-6">
+            <p>&copy; 2025 Herman Engdahl. Alla rättigheter reserverade.</p>
+        </footer>
+    </div>
+</body>
+</html>
