@@ -3,306 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herman Engdahl - CV</title>
-    <script src="https://tailwindcss.com"></script>
-    <link href="https://googleapis.com" rel="stylesheet">
-    <!-- Font Awesome CSS för ikoner -->
-    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Herman Engdahl | Senior Business Development & Sales 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        :root {
+            --bg-dark: #05070a;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
         }
-        .skill-bar-bg {
-            background-color: #e5e7eb; /* Lighter gray for skill bar background */
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #f3f4f6;
+            background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, #05070a 50%);
         }
-        .skill-bar-fill {
-            background-color: #3b82f6; /* Blue for skill bar fill */
-            transition: width 0.5s ease-in-out;
+
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
-        /* Custom style for skill tags */
-        .skill-tag {
-            display: inline-block;
-            background-color: #dbeafe; /* Light blue background */
-            color: #1e40af; /* Darker blue text */
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px; /* Fully rounded corners */
-            font-size: 0.875rem; /* text-sm */
-            font-weight: 500; /* font-medium */
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            white-space: nowrap; /* Prevent breaking in the middle of a tag */
+
+        .glow-text {
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
         }
+
+        .progress-glow {
+            box-shadow: 0 0 12px var(--accent-blue);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-entry { animation: fadeIn 0.8s ease-out forwards; }
     </style>
 </head>
-<body class="p-4 sm:p-8 md:p-12 lg:p-16">
-    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 sm:p-8 md:p-10 flex flex-col sm:flex-row items-center justify-between rounded-t-lg">
-            <div class="text-center sm:text-left mb-4 sm:mb-0">
-                <h1 class="text-3xl sm:text-4xl font-bold mb-1">Herman Engdahl</h1>
-                <p class="text-xl sm:text-2xl font-light">Business Development Manager</p>
-            </div>
-            <div class="flex items-center space-x-4 text-sm sm:text-base">
-                <!-- Se till att din bildfil, t.ex. Herman.png, ligger i samma mapp som denna HTML-fil -->
-                <img src="Herman.png" alt="Herman Engdahl" class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover">
-            </div>
-        </div>
+<body class="antialiased min-h-screen">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 sm:p-8">
-            <div class="md:col-span-1 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Kontakt</h2>
-                <ul class="text-gray-700 space-y-2">
-                    <li><i class="fa-solid fa-phone text-blue-600 mr-2"></i><strong class="font-medium">Telefon:</strong> 0727-111109</li>
-                    <li><i class="fa-solid fa-envelope text-blue-600 mr-2"></i><strong class="font-medium">E-post:</strong> herman.engdahl@gmail.com</li>
-                    <li><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i><strong class="font-medium">Ort:</strong> Örgryte, Göteborg</li>
-                    <li><i class="fa-brands fa-linkedin text-blue-600 mr-2"></i><strong class="font-medium">LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">Herman.engdahl</a></li>
-                </ul>
+    <div class="max-w-7xl mx-auto px-6 py-10 md:py-24">
+        
+        <nav class="flex justify-between items-center mb-16 animate-entry">
+            <div class="text-sm font-bold tracking-[0.3em] text-blue-500 uppercase">Herman Engdahl Portfolio v2.6</div>
+            <div class="flex gap-6">
+                <a href="https://linkedin.com/in/herman-engdahl" class="h-10 w-10 glass rounded-full flex items-center justify-center hover:border-blue-500 transition cursor-pointer">in</a>
+                <a href="mailto:herman.engdahl@gmail.com" class="h-10 w-10 glass rounded-full flex items-center justify-center hover:border-blue-500 transition cursor-pointer">@</a>
             </div>
+        </nav>
 
-            <div class="md:col-span-2 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Målsättning & Profil</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Jag vill utveckla mig inom digital marknadsföring, försäljning, e-handelsutveckling, ledarskap och komplex affärsutveckling. Som en driven och resultatinriktad Business Development Manager med en gedigen bakgrund inom retail och SaaS-försäljning, brinner jag för att identifiera och utveckla nya affärsmöjligheter. Med ett starkt intresse för dataanalys, e-handelsutveckling, IT-lösningar, **ett brinnande intresse för AI:s påverkan på e-handel och en stark tro på datadriven beslutsfattning**, kombinerar jag strategisk insikt med praktisk erfarenhet för att maximera tillväxt och kundrelationer. Jag trivs i en ledande roll med frihet under ansvar och är redo för nya utmaningar.
-                </p>
-                <!-- Call to Action -->
-                <p class="text-center mt-4 p-3 bg-blue-100 text-blue-800 rounded-md shadow-sm">
-                    <strong class="font-semibold">Är du redo att ta nästa steg?</strong> Kontakta mig gärna för en djupare diskussion om hur mina erfarenheter kan bidra till er framgång.
-                    <a href="mailto:herman.engdahl@gmail.com" class="text-blue-600 hover:underline font-medium ml-2">Skicka ett mail här!</a>
+        <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 items-end animate-entry">
+            <div class="lg:col-span-8">
+                <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter leading-none mb-6">
+                    HERMAN <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 glow-text">ENGDAHL</span>
+                </h1>
+                <p class="text-xl md:text-3xl text-slate-400 font-light max-w-3xl">
+                    Business Development Manager & <span class="text-white font-semibold">SaaS Sales Leader</span>. Expert på att navigera komplexa säljprocesser med Inköps-DNA.
                 </p>
             </div>
-        </div>
+            <div class="lg:col-span-4 flex flex-col items-end">
+                <div class="glass p-6 rounded-3xl w-full md:w-80 text-right">
+                    <p class="text-xs text-blue-500 font-bold uppercase mb-2 tracking-widest">Plats</p>
+                    <p class="text-lg font-semibold">Göteborg, Sverige</p>
+                </div>
+            </div>
+        </header>
 
-        <div class="p-6 sm:p-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Arbetslivserfarenhet</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6">
+            
+            <div class="md:col-span-4 lg:col-span-5 glass p-10 rounded-[3rem] animate-entry" style="animation-delay: 0.2s">
+                <h3 class="text-xl font-bold mb-10 flex items-center">
+                    <span class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4 text-blue-500">📊</span>
+                    Expertisområden
+                </h3>
+                
+                <div class="space-y-10">
+                    <div>
+                        <div class="flex justify-between items-end mb-4">
+                            <div>
+                                <h4 class="text-white font-bold">Business Development</h4>
+                                <p class="text-xs text-slate-500">Strategisk expansion & Partnerskap</p>
+                            </div>
+                            <span class="text-blue-400 font-mono">98%</span>
+                        </div>
+                        <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 progress-glow" style="width: 98%"></div>
+                        </div>
+                    </div>
 
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Head of Back Office</h3>
-                <p class="text-blue-600 font-medium">TestSeek | 2012-09 – Idag</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Leda och hantera ett internationellt back office-team om fem medarbetare.</li>
-                    <li>Säkerställa effektiv produktion med hög kvalitet genom utbildning, processimplementering och personalhantering.</li>
-                    <li>Ansvara för rapportering och analys av big data med hjälp av komplexa egenutvecklade verktyg.</li>
-                    <li>Utveckla och effektivisera IT-system för att förbättra arbetsflöden.</li>
-                </ul>
+                    <div>
+                        <div class="flex justify-between items-end mb-4">
+                            <div>
+                                <h4 class="text-white font-bold">Operational Leadership</h4>
+                                <p class="text-xs text-slate-500">Teamledning & Processoptimering</p>
+                            </div>
+                            <span class="text-purple-400 font-mono">94%</span>
+                        </div>
+                        <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-600 to-purple-400 shadow-[0_0_12px_#8b5cf6]" style="width: 94%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-end mb-4">
+                            <div>
+                                <h4 class="text-white font-bold">SaaS & IT-Sales</h4>
+                                <p class="text-xs text-slate-500">Teknisk försäljning & Digital transformation</p>
+                            </div>
+                            <span class="text-indigo-400 font-mono">96%</span>
+                        </div>
+                        <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-indigo-600 to-indigo-400" style="width: 96%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Deltidsanställd under studier</h3>
-                <p class="text-blue-600 font-medium">Telia Butik Backaplan, Göteborg | 2010-05 – 2012-09</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Arbetade med försäljning i butik.</li>
-                </ul>
+            <div class="md:col-span-4 lg:col-span-7 glass p-10 rounded-[3rem] bg-gradient-to-br from-blue-500/10 to-transparent flex flex-col justify-between animate-entry" style="animation-delay: 0.3s">
+                <div>
+                    <h3 class="text-3xl md:text-5xl font-bold text-white mb-8">Utbildad vid IHM med fokus på resultat.</h3>
+                    <p class="text-xl text-slate-400 leading-relaxed mb-8">
+                        Min bakgrund kombinerar akademisk tyngd från <span class="text-white">IHM Business School</span> med praktisk erfarenhet av att driva säljprocesser framåt. Genom att förstå systemstöd som <span class="text-white">PIM, ERP och CRM</span> skapar jag strukturer som inte bara säljer, utan också skalar.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <p class="text-3xl font-bold text-white">SaaS</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Specialisering</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <p class="text-3xl font-bold text-white">Senior</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Nivå 2026</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Deltidsanställd under studier</h3>
-                <p class="text-blue-600 font-medium">Clas Ohlsson, Frölunda Torg | 2009-09 – 2010-04</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Arbetade med försäljning i butik.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Data quality controller</h3>
-                <p class="text-blue-600 font-medium">FMP Publishing AB | 2008-10 – 2009-09</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Ansvarade för datakvalitetskontroll.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Merchandiser (SanDisk)</h3>
-                <p class="text-blue-600 font-medium">Clear Communication Sweden AB | 2008-04 – 2008-09</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Arbetade som merchandiser för SanDisk.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Säljare och avdelningsansvarig för kontorsprodukter/mobila tjänster</h3>
-                <p class="text-blue-600 font-medium">Media Markt, Göteborg | 2006-10 – 2008-05</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Ansvarade för försäljning och avdelningsansvar för kontorsprodukter och mobila tjänster.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Säljare och exponeringsansvarig</h3>
-                <p class="text-blue-600 font-medium">Telia Butik Backaplan, Göteborg | 2006-01 – 2006-10</p>
-                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
-                    <li>Ansvarade för försäljning och exponering i butik.</li>
-                </ul>
+            <div class="md:col-span-4 lg:col-span-12 grid grid-cols-1 lg:grid-cols-2 gap-6 animate-entry" style="animation-delay: 0.4s">
+                <div class="glass p-8 rounded-[2.5rem] hover:border-blue-500 transition-all">
+                    <span class="text-xs font-bold text-blue-500 mb-2 block uppercase">Nuvarande</span>
+                    <h4 class="text-2xl font-bold text-white mb-2">Business Development Manager</h4>
+                    <p class="text-slate-400">SaaS & Operational Leadership</p>
+                    <p class="mt-4 text-sm text-slate-500 italic text-pretty">Fokus på strategisk expansion, teknisk försäljning och att bygga långsiktiga relationer med C-level beslutsfattare.</p>
+                </div>
+                
+                <div class="glass p-8 rounded-[2.5rem] hover:border-indigo-500 transition-all">
+                    <span class="text-xs font-bold text-indigo-500 mb-2 block uppercase">Bakgrund</span>
+                    <h4 class="text-2xl font-bold text-white mb-2">IHM Business School</h4>
+                    <p class="text-slate-400">Strategiskt sälj & Marknadsföring</p>
+                    <p class="mt-4 text-sm text-slate-500 italic text-pretty">Utbildad inom moderna säljmetoder, marknadsanalys och affärsmannaskap för en digital värld.</p>
+                </div>
             </div>
             
-            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Övriga Förtroendeuppdrag</h2>
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800"><i class="fa-solid fa-users text-gray-600 mr-3"></i>Vice Ordförande / Kassör</h3>
-                <p class="text-blue-600 font-medium">BRF Lilla Danska Vägen 14 | 2014 – Idag</p>
-            </div>
-        </div>
-
-        <div class="p-6 sm:p-8 bg-gray-50">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Färdigheter</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-sm font-medium text-gray-700">Affärsutveckling</span>
-                            <span class="text-sm font-medium text-gray-700">90%</span>
-                        </div>
-                        <div class="w-full skill-bar-bg rounded-full h-2">
-                            <div class="skill-bar-fill h-2 rounded-full" style="width: 90%"></div>
-                        </div>
+            <div class="md:col-span-4 lg:col-span-12 glass p-1 rounded-[3.5rem] bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 mt-6 animate-entry" style="animation-delay: 0.5s">
+                <div class="bg-black/90 p-12 rounded-[3.4rem] flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-4xl font-bold text-white mb-2">Redo för nästa stora steg?</h2>
+                        <p class="text-slate-400">Låt oss diskutera hur min erfarenhet kan bidra till er tillväxt.</p>
                     </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-sm font-medium text-gray-700">Dataanalys</span>
-                            <span class="text-sm font-medium text-gray-700">85%</span>
-                        </div>
-                        <div class="w-full skill-bar-bg rounded-full h-2">
-                            <div class="skill-bar-fill h-2 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-sm font-medium text-gray-700">SaaS Försäljning</span>
-                            <span class="text-sm font-medium text-gray-700">80%</span>
-                        </div>
-                        <div class="w-full skill-bar-bg rounded-full h-2">
-                            <div class="skill-bar-fill h-2 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-sm font-medium text-gray-700">E-handelsutveckling</span>
-                            <span class="text-sm font-medium text-gray-700">75%</span>
-                        </div>
-                        <div class="w-full skill-bar-bg rounded-full h-2">
-                            <div class="skill-bar-fill h-2 rounded-full" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-sm font-medium text-gray-700">IT-system Effektivisering</span>
-                            <span class="text-sm font-medium text-gray-700">85%</span>
-                        </div>
-                        <div class="w-full skill-bar-bg rounded-full h-2">
-                            <div class="skill-bar-fill h-2 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-sm font-medium text-gray-700">Ledarskap</span>
-                            <span class="text-sm font-medium text-gray-700">90%</span>
-                        </div>
-                        <div class="w-full skill-bar-bg rounded-full h-2">
-                            <div class="skill-bar-fill h-2 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <!-- New Tech Skills tags -->
-                    <div class="mt-6">
-                        <h4 class="text-sm font-semibold text-gray-800 mb-3 uppercase tracking-wider">Verktyg & Tekniker</h4>
-                        <div class="flex flex-wrap">
-                            <span class="skill-tag">SEO Online Marketing</span>
-                            <span class="skill-tag">Google Analytics</span>
-                            <span class="skill-tag">HubSpot Marketing Automation</span>
-                            <span class="skill-tag">Microsoft Dynamics</span>
-                            <span class="skill-tag">Programvaruutveckling</span>
-                            <span class="skill-tag">Adobe Photoshop</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="text-gray-600 mt-6 text-sm italic">
-                <strong>Övriga Datorkunskaper:</strong> Goda datorkunskaper överlag, behärskar program som Word, Excel, PowerPoint.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-4">
-                <div class="flex items-center text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                    <i class="fa-solid fa-certificate mr-1"></i> AdWords Certifierad
-                </div>
-                <div class="flex items-center text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                    <i class="fa-solid fa-certificate mr-1"></i> Bing Ads Accredited
-                </div>
-                <div class="flex items-center text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                    <i class="fa-solid fa-certificate mr-1"></i> Youtube Marketing
-                </div>
-                <div class="flex items-center text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                    <i class="fa-solid fa-certificate mr-1"></i> Google Analytics
+                    <a href="mailto:herman.engdahl@gmail.com" class="px-10 py-5 bg-white text-black font-extrabold rounded-3xl hover:scale-105 active:scale-95 transition-all text-lg">
+                        Kontakta Herman
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="p-6 sm:p-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Utbildning</h2>
-            
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
-                <h3 class="text-xl font-semibold text-gray-800">Full Stack Development Course</h3>
-                <p class="text-blue-600 font-medium">Lexicon | 2024 maj – 2025 maj (1 år)</p>
-                <p class="text-gray-700 mt-2 text-sm leading-relaxed">
-                    Grundläggande kunskaper inom webbutveckling med fokus på både front-end och back-end. Lärde mig om språk och ramverk, med specialisering inom Java, samt:
-                </p>
-                <div class="flex flex-wrap mt-3">
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">SQL (databaser)</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Git</span>
-                </div>
-                <p class="text-gray-600 mt-2 text-xs italic">Utvecklat förståelse för applikationslogik, databasintegration och hela utvecklingscykeln.</p>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800">Digital Marketing & Sales Analytics</h3>
-                <p class="text-blue-600 font-medium">IHM Business School, Göteborg | 2017 – 2019 (2 år)</p>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800">Strategisk Inköpare</h3>
-                <p class="text-blue-600 font-medium">Företagsekonomiska Institutet, (FEI) | 2010 – 2011 (2 år)</p>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800">Samhällsvetenskapligt basår</h3>
-                <p class="text-blue-600 font-medium">Arbetarrörelsens Folkhögskola, Järntorget, Göteborg | 2009 – 2010 (1 år)</p>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800">Senior year High School</h3>
-                <p class="text-blue-600 font-medium">Libby High School, Libby, USA | 2002 – 2003 (1 år)</p>
-            </div>
-
-            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-800">Samhällsvetenskapligt program, inriktning ekonomi</h3>
-                <p class="text-blue-600 font-medium">Peder Skrivares Gymnasium, Varberg | 2000 – 2004 (3 år)</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-gray-50">
-            <div>
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Språk</h2>
-                <ul class="text-gray-700 space-y-2">
-                    <li><strong class="font-medium">Svenska:</strong> Modersmål</li>
-                    <li><strong class="font-medium">Engelska:</strong> Flytande i tal och skrift</li>
-                    <li><strong class="font-medium">Franska:</strong> Goda kunskaper</li>
-                    <li><strong class="font-medium">Tyska:</strong> Baskunskaper</li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Övrigt</h2>
-                <p class="text-gray-700 mb-2">Innehar B Körkort och egen bil.</p>
-                <p class="text-gray-700 font-medium italic">Referenser lämnas på begäran.</p>
-            </div>
-        </div>
-
-        <footer class="bg-gray-800 text-white p-6 text-center text-sm">
-            <p>&copy; 2025 Herman Engdahl. Alla rättigheter reserverade.</p>
+        <footer class="mt-20 text-center text-slate-600 text-xs tracking-widest uppercase pb-10">
+            © 2026 Herman Engdahl — Business Development Manager
         </footer>
     </div>
+
 </body>
 </html>
