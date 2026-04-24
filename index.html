@@ -3,177 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herman Engdahl | Senior Business Development & Sales 2026</title>
+    <title>Herman Engdahl | Business Development & Full Stack 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        
-        :root {
-            --bg-dark: #05070a;
-            --card-bg: rgba(17, 24, 39, 0.7);
-            --accent-blue: #3b82f6;
-            --accent-purple: #8b5cf6;
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
         }
-
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: var(--bg-dark); 
-            color: #f3f4f6;
-            background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, #05070a 50%);
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
         }
-
-        .glass {
-            background: var(--card-bg);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        .glass-card:hover { transform: translateY(-5px); }
+        .blue-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
         }
-
-        .glow-text {
-            text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 9999px;
+            background: linear-gradient(90deg, #1e40af, #60a5fa);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
         }
-
-        .progress-glow {
-            box-shadow: 0 0 12px var(--accent-blue);
+        .floating { animation: float 4s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-entry { animation: fadeIn 0.8s ease-out forwards; }
     </style>
 </head>
-<body class="antialiased min-h-screen">
+<body class="antialiased py-6 md:py-12 px-4">
 
-    <div class="max-w-7xl mx-auto px-6 py-10 md:py-24">
+    <div class="max-w-6xl mx-auto">
         
-        <nav class="flex justify-between items-center mb-16 animate-entry">
-            <div class="text-sm font-bold tracking-[0.3em] text-blue-500 uppercase">Herman Engdahl Portfolio v2.6</div>
-            <div class="flex gap-6">
-                <a href="https://linkedin.com/in/herman-engdahl" class="h-10 w-10 glass rounded-full flex items-center justify-center hover:border-blue-500 transition cursor-pointer">in</a>
-                <a href="mailto:herman.engdahl@gmail.com" class="h-10 w-10 glass rounded-full flex items-center justify-center hover:border-blue-500 transition cursor-pointer">@</a>
-            </div>
-        </nav>
-
-        <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 items-end animate-entry">
-            <div class="lg:col-span-8">
-                <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter leading-none mb-6">
-                    HERMAN <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 glow-text">ENGDAHL</span>
-                </h1>
-                <p class="text-xl md:text-3xl text-slate-400 font-light max-w-3xl">
-                    Business Development Manager & <span class="text-white font-semibold">SaaS Sales Leader</span>. Expert på att navigera komplexa säljprocesser med Inköps-DNA.
-                </p>
-            </div>
-            <div class="lg:col-span-4 flex flex-col items-end">
-                <div class="glass p-6 rounded-3xl w-full md:w-80 text-right">
-                    <p class="text-xs text-blue-500 font-bold uppercase mb-2 tracking-widest">Plats</p>
-                    <p class="text-lg font-semibold">Göteborg, Sverige</p>
+        <header class="blue-gradient rounded-[3rem] p-8 md:p-14 text-white shadow-2xl relative overflow-hidden mb-8">
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="text-center md:text-left flex-1">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase mb-6 border border-white/20">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Full Stack & Strategy 2026
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4">Herman Engdahl</h1>
+                    <p class="text-xl md:text-2xl font-light opacity-90 max-w-2xl leading-relaxed">
+                        Senior Business Development Manager med fokus på <span class="font-bold underline decoration-blue-300">SaaS, AI & Full Stack Utveckling</span>.
+                    </p>
+                    <div class="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="mailto:herman.engdahl@gmail.com" class="px-8 py-4 bg-white text-blue-700 rounded-2xl font-bold hover:scale-105 transition shadow-xl">Kontakta mig</a>
+                        <a href="https://www.linkedin.com/in/hermanengdahl/" target="_blank" class="px-8 py-4 bg-blue-900/40 border border-white/20 rounded-2xl font-bold hover:bg-white/10 transition">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-[2.5rem] overflow-hidden border-8 border-white/10 shadow-2xl floating shrink-0">
+                    <img src="Herman.png" alt="Herman Engdahl" class="w-full h-full object-cover">
                 </div>
             </div>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             
-            <div class="md:col-span-4 lg:col-span-5 glass p-10 rounded-[3rem] animate-entry" style="animation-delay: 0.2s">
-                <h3 class="text-xl font-bold mb-10 flex items-center">
-                    <span class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4 text-blue-500">📊</span>
-                    Expertisområden
-                </h3>
-                
-                <div class="space-y-10">
-                    <div>
-                        <div class="flex justify-between items-end mb-4">
-                            <div>
-                                <h4 class="text-white font-bold">Business Development</h4>
-                                <p class="text-xs text-slate-500">Strategisk expansion & Partnerskap</p>
-                            </div>
-                            <span class="text-blue-400 font-mono">98%</span>
+            <div class="md:col-span-4 space-y-6">
+                <section class="glass-card p-8 rounded-[2.5rem]">
+                    <h3 class="text-blue-900 font-bold uppercase tracking-widest text-xs mb-6">Expertis & Fokus</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2 uppercase text-slate-400">Ledarskap</div>
+                            <div class="h-2 w-full bg-slate-100 rounded-full"><div class="skill-bar-fill" style="width: 92%"></div></div>
                         </div>
-                        <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 progress-glow" style="width: 98%"></div>
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2 uppercase text-slate-400">Spring Boot / Java</div>
+                            <div class="h-2 w-full bg-slate-100 rounded-full"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2 uppercase text-slate-400">Affärsutveckling</div>
+                            <div class="h-2 w-full bg-slate-100 rounded-full"><div class="skill-bar-fill" style="width: 90%"></div></div>
                         </div>
                     </div>
+                </section>
 
-                    <div>
-                        <div class="flex justify-between items-end mb-4">
-                            <div>
-                                <h4 class="text-white font-bold">Operational Leadership</h4>
-                                <p class="text-xs text-slate-500">Teamledning & Processoptimering</p>
-                            </div>
-                            <span class="text-purple-400 font-mono">94%</span>
-                        </div>
-                        <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-purple-600 to-purple-400 shadow-[0_0_12px_#8b5cf6]" style="width: 94%"></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="flex justify-between items-end mb-4">
-                            <div>
-                                <h4 class="text-white font-bold">SaaS & IT-Sales</h4>
-                                <p class="text-xs text-slate-500">Teknisk försäljning & Digital transformation</p>
-                            </div>
-                            <span class="text-indigo-400 font-mono">96%</span>
-                        </div>
-                        <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-indigo-600 to-indigo-400" style="width: 96%"></div>
-                        </div>
-                    </div>
-                </div>
+                <section class="glass-card p-8 rounded-[2.5rem] bg-blue-50/30">
+                    <h3 class="text-blue-900 font-bold uppercase tracking-widest text-xs mb-6">Information</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 text-sm font-medium text-slate-600">
+                            <i class="fa-solid fa-phone text-blue-600"></i> 0727-111109
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-medium text-slate-600">
+                            <i class="fa-solid fa-location-dot text-blue-600"></i> Örgryte, Göteborg
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-medium text-slate-600">
+                            <i class="fa-solid fa-envelope text-blue-600"></i> herman.engdahl@gmail.com
+                        </li>
+                    </ul>
+                </section>
             </div>
 
-            <div class="md:col-span-4 lg:col-span-7 glass p-10 rounded-[3rem] bg-gradient-to-br from-blue-500/10 to-transparent flex flex-col justify-between animate-entry" style="animation-delay: 0.3s">
-                <div>
-                    <h3 class="text-3xl md:text-5xl font-bold text-white mb-8">Utbildad vid IHM med fokus på resultat.</h3>
-                    <p class="text-xl text-slate-400 leading-relaxed mb-8">
-                        Min bakgrund kombinerar akademisk tyngd från <span class="text-white">IHM Business School</span> med praktisk erfarenhet av att driva säljprocesser framåt. Genom att förstå systemstöd som <span class="text-white">PIM, ERP och CRM</span> skapar jag strukturer som inte bara säljer, utan också skalar.
+            <div class="md:col-span-8 space-y-6">
+                
+                <section class="glass-card p-8 md:p-10 rounded-[2.5rem] border-l-8 border-blue-600">
+                    <h2 class="text-2xl font-extrabold text-blue-900 mb-6 uppercase tracking-tighter italic">Lexicon Full Stack 2024-2025</h2>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-4 py-2 bg-blue-600 text-white rounded-xl text-[10px] font-black tracking-widest shadow-lg">SPRING BOOT</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-xl text-[10px] font-bold uppercase">Java</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-xl text-[10px] font-bold uppercase">React</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-xl text-[10px] font-bold uppercase">SQL</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-xl text-[10px] font-bold uppercase">Python</span>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Ett intensivt år med fokus på arkitektur, systemlogik och datadriven utveckling. Denna utbildning kompletterar min strategiska bakgrund och gör mig till en unik brygga mellan affär och teknik.
                     </p>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
-                        <p class="text-3xl font-bold text-white">SaaS</p>
-                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Specialisering</p>
-                    </div>
-                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
-                        <p class="text-3xl font-bold text-white">Senior</p>
-                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Nivå 2026</p>
-                    </div>
-                </div>
-            </div>
+                </section>
 
-            <div class="md:col-span-4 lg:col-span-12 grid grid-cols-1 lg:grid-cols-2 gap-6 animate-entry" style="animation-delay: 0.4s">
-                <div class="glass p-8 rounded-[2.5rem] hover:border-blue-500 transition-all">
-                    <span class="text-xs font-bold text-blue-500 mb-2 block uppercase">Nuvarande</span>
-                    <h4 class="text-2xl font-bold text-white mb-2">Business Development Manager</h4>
-                    <p class="text-slate-400">SaaS & Operational Leadership</p>
-                    <p class="mt-4 text-sm text-slate-500 italic text-pretty">Fokus på strategisk expansion, teknisk försäljning och att bygga långsiktiga relationer med C-level beslutsfattare.</p>
-                </div>
-                
-                <div class="glass p-8 rounded-[2.5rem] hover:border-indigo-500 transition-all">
-                    <span class="text-xs font-bold text-indigo-500 mb-2 block uppercase">Bakgrund</span>
-                    <h4 class="text-2xl font-bold text-white mb-2">IHM Business School</h4>
-                    <p class="text-slate-400">Strategiskt sälj & Marknadsföring</p>
-                    <p class="mt-4 text-sm text-slate-500 italic text-pretty">Utbildad inom moderna säljmetoder, marknadsanalys och affärsmannaskap för en digital värld.</p>
-                </div>
-            </div>
-            
-            <div class="md:col-span-4 lg:col-span-12 glass p-1 rounded-[3.5rem] bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 mt-6 animate-entry" style="animation-delay: 0.5s">
-                <div class="bg-black/90 p-12 rounded-[3.4rem] flex flex-col md:flex-row items-center justify-center gap-8">
-                    <div class="text-center md:text-left">
-                        <h2 class="text-4xl font-bold text-white mb-2">Redo för nästa stora steg?</h2>
-                        <p class="text-slate-400">Låt oss diskutera hur min erfarenhet kan bidra till er tillväxt.</p>
+                <section class="glass-card p-8 md:p-10 rounded-[2.5rem]">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-8 border-b border-slate-100 pb-4">Karriär</h2>
+                    <div class="space-y-10">
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute -left-[7px] top-0 w-3 h-3 bg-blue-600 rounded-full"></div>
+                            <h4 class="text-lg font-bold text-slate-900">Head of Back Office <span class="text-blue-600 ml-2">@ TestSeek</span></h4>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-3">2012 — IDAG</p>
+                            <p class="text-sm text-slate-600">Ledning av internationella team, big data-rapportering och IT-effektivisering.</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-[7px] top-0 w-3 h-3 bg-slate-300 rounded-full"></div>
+                            <h4 class="text-lg font-bold text-slate-700 underline decoration-slate-200">Media Markt & Telia</h4>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-3">2006 — 2012</p>
+                            <p class="text-sm text-slate-500 italic">Senior försäljning och avdelningsansvar inom konsumentteknik och mobila tjänster.</p>
+                        </div>
                     </div>
-                    <a href="mailto:herman.engdahl@gmail.com" class="px-10 py-5 bg-white text-black font-extrabold rounded-3xl hover:scale-105 active:scale-95 transition-all text-lg">
-                        Kontakta Herman
-                    </a>
+                </section>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="glass-card p-6 rounded-3xl">
+                        <p class="text-[10px] font-bold text-blue-600 uppercase mb-1 tracking-widest">IHM Business School</p>
+                        <h4 class="font-bold text-slate-800 text-sm">Digital Marketing & Sales Analytics</h4>
+                    </div>
+                    <div class="glass-card p-6 rounded-3xl">
+                        <p class="text-[10px] font-bold text-blue-600 uppercase mb-1 tracking-widest">FEI</p>
+                        <h4 class="font-bold text-slate-800 text-sm">Strategisk Inköpare</h4>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer class="mt-20 text-center text-slate-600 text-xs tracking-widest uppercase pb-10">
-            © 2026 Herman Engdahl — Business Development Manager
+        <footer class="mt-12 text-center p-10 glass-card rounded-[3rem] border-none bg-slate-900 text-white">
+            <h3 class="text-2xl font-bold mb-2 tracking-tight">Redo för nästa stora projekt?</h3>
+            <p class="text-slate-400 text-sm mb-8">Låt oss prata om hur jag kan stärka er affär och teknik.</p>
+            <a href="mailto:herman.engdahl@gmail.com" class="inline-block px-12 py-4 blue-gradient rounded-2xl font-extrabold hover:scale-105 transition shadow-2xl">Boka möte</a>
+            <p class="mt-12 text-[10px] text-slate-500 uppercase tracking-[0.4em]">© 2026 Herman Engdahl | Göteborg</p>
         </footer>
     </div>
 
