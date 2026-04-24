@@ -9,48 +9,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #0f172a; }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); }
-        .section-card { border-bottom: 1px solid #f1f5f9; padding-bottom: 3rem; padding-top: 3rem; }
-        .skill-chip { background: #f8fafc; border: 1px solid #e2e8f0; color: #475569; font-weight: 600; font-size: 0.75rem; padding: 0.5rem 1rem; border-radius: 9999px; }
-        .stat-bar { height: 6px; background: #f1f5f9; border-radius: 3px; overflow: hidden; margin-top: 8px; }
-        .stat-fill { height: 100%; background: #2563eb; border-radius: 3px; }
+        .section-card { border-bottom: 1px solid #f1f5f9; padding-bottom: 4rem; padding-top: 4rem; }
+        .tech-tag { background: rgba(59, 130, 246, 0.1); color: #1e40af; font-weight: 700; font-size: 0.65rem; padding: 0.4rem 0.8rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .martech-box { background: #f8fafc; border-radius: 2rem; padding: 2rem; border: 1px solid #e2e8f0; transition: all 0.3s ease; height: 100%; }
+        .martech-box:hover { border-color: #3b82f6; transform: translateY(-5px); }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center text-sm font-medium border-b border-gray-50">
-        <div class="flex gap-6">
-            <a href="mailto:herman.engdahl@gmail.com" class="hover:text-blue-600 transition"><i class="fa-solid fa-envelope mr-2"></i>herman.engdahl@gmail.com</a>
-            <span class="text-gray-300 hidden md:block">|</span>
-            <a href="tel:0727111109" class="hover:text-blue-600 transition hidden md:block"><i class="fa-solid fa-phone mr-2"></i>0727-111109</a>
+    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center border-b border-gray-50">
+        <span class="font-extrabold tracking-tighter text-2xl italic">HE<span class="text-blue-600">.</span></span>
+        <div class="flex gap-8 text-sm font-bold uppercase tracking-widest">
+            <a href="mailto:herman.engdahl@gmail.com" class="hover:text-blue-600 transition">Email</a>
+            <a href="https://www.linkedin.com/in/hermanengdahl/" target="_blank" class="text-blue-600">LinkedIn</a>
         </div>
-        <a href="https://www.linkedin.com/in/hermanengdahl/" target="_blank" class="text-blue-700 font-bold">LINKEDIN <i class="fa-brands fa-linkedin"></i></a>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-        <div class="md:col-span-8">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-slate-900 mb-6">
-                Herman Engdahl
-            </h1>
-            <p class="text-xl md:text-2xl font-semibold text-blue-700 mb-6 leading-snug">
-                Business Development Manager | SaaS Sales & Strategic Sourcing | AI Strategy for E-commerce & Digital Transformation
-            </p>
-            <p class="text-lg text-slate-500 max-w-2xl leading-relaxed mb-8">
-                Driven affärsutvecklare med fokus på att överbrygga gapet mellan komplex teknik och affärsnytta. Specialiserad på att driva tillväxt genom datadrivna beslut och AI-integrationer.
-            </p>
-            <div class="flex flex-wrap gap-3">
-                <span class="skill-chip">STRATEGIC SOURCING</span>
-                <span class="skill-chip">SAAS SALES</span>
-                <span class="skill-chip">AI IMPLEMENTATION</span>
-                <span class="skill-chip">DIGITAL TRANSFORMATION</span>
+    <header class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-8">
+                <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter text-slate-900 mb-8 leading-[0.85]">
+                    Business <br>Development<span class="text-blue-600">.</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-bold text-blue-700 mb-6 leading-snug uppercase tracking-tight">
+                    Business Development Manager | SaaS Sales & Strategic Sourcing | AI Strategy for E-commerce & Digital Transformation
+                </p>
+                <p class="text-lg text-slate-500 max-w-2xl leading-relaxed mb-10 font-medium">
+                    Strategisk ledare med över 12 års erfarenhet av att skala verksamheter. Jag överbrygger gapet mellan komplex teknik och affärsmål genom expertis inom Mar-Tech, AI och systemarkitektur.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="tech-tag">SaaS Strategy</span>
+                    <span class="tech-tag">Revenue Ops</span>
+                    <span class="tech-tag">Digital Transformation</span>
+                    <span class="tech-tag">Mar-Tech</span>
+                </div>
             </div>
-        </div>
-        <div class="md:col-span-4 flex justify-center">
-            <div class="relative">
-                <img src="Herman.png" alt="Herman Engdahl" class="w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover shadow-2xl grayscale hover:grayscale-0 transition duration-500">
-                <div class="absolute -bottom-4 -right-4 bg-blue-600 text-white p-6 rounded-xl hidden md:block">
-                    <p class="text-3xl font-black">12+</p>
-                    <p class="text-[10px] font-bold uppercase tracking-widest">Års Erfarenhet</p>
+            <div class="lg:col-span-4 flex justify-center">
+                <div class="relative">
+                    <img src="Herman.png" alt="Herman Engdahl" class="w-72 h-72 md:w-96 md:h-96 rounded-[4rem] object-cover shadow-2xl grayscale">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
+                        <p class="text-4xl font-black text-blue-600">12+</p>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Års Erfarenhet</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,94 +58,94 @@
 
     <main class="max-w-6xl mx-auto px-6">
         
-        <section class="section-card grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <h3 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-6">Expertis</h3>
-                <div class="space-y-6">
-                    <div>
-                        <div class="flex justify-between text-xs font-bold uppercase"><span>Commercial Strategy</span><span>95%</span></div>
-                        <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+        <section class="section-card">
+            <h3 class="text-xs font-black text-blue-600 uppercase tracking-[0.3em] mb-10">Strategic Expertise</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="martech-box">
+                    <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-200">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <div>
-                        <div class="flex justify-between text-xs font-bold uppercase"><span>Strategic Sourcing</span><span>90%</span></div>
-                        <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-xs font-bold uppercase"><span>AI & Tech Enablement</span><span>85%</span></div>
-                        <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
-                    </div>
+                    <h4 class="font-bold text-xl mb-3">Mar-Tech & Growth</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Optimering av digitala säljresor genom Revenue Operations och datadriven analys för maximal ROI.</p>
                 </div>
-            </div>
-            <div class="md:col-span-2">
-                <h3 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-6">Professionell Profil</h3>
-                <p class="text-slate-600 leading-relaxed text-lg">
-                    Med en gedigen bakgrund inom internationell produktion (TestSeek) och strategiskt inköp (FEI), kombinerar jag affärsmässig intuition med teknisk spetskompetens. Mitt fokus ligger på att identifiera och exekvera på möjligheter där **AI och modern mjukvaruarkitektur** möter affärsstrategi för att skapa mätbar tillväxt och operativ excellens.
-                </p>
+                <div class="martech-box">
+                    <div class="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">AI Transformation</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Implementering av AI-lösningar för E-handel för att automatisera processer och öka konvertering.</p>
+                </div>
+                <div class="martech-box">
+                    <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">Strategic Sourcing</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Inköpsstrategi och leverantörsstyrning för SaaS-bolag med fokus på skalbarhet och systemstöd.</p>
+                </div>
             </div>
         </section>
 
         <section class="section-card">
-            <h3 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-12">Karriärshistorik</h3>
-            <div class="space-y-16">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-                    <div class="md:col-span-4">
-                        <p class="text-sm font-bold text-slate-400 uppercase">2012 — NUVALDET</p>
-                        <h4 class="text-xl font-extrabold text-slate-900">Head of Back Office</h4>
-                        <p class="text-blue-600 font-bold">TestSeek</p>
-                    </div>
-                    <div class="md:col-span-8">
-                        <p class="text-slate-600 leading-relaxed">
-                            Ledning av internationellt team med fokus på big data-processering och kvalitetssäkring. Ansvarig för att transformera komplexa datamängder till affärsnytta genom egenutvecklade IT-lösningar och strategisk processtyrning.
-                        </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="bg-slate-950 p-12 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+                    <h4 class="text-blue-400 font-bold text-[10px] uppercase mb-6 tracking-[0.3em]">Technical Architecture</h4>
+                    <h3 class="text-4xl font-extrabold mb-8 leading-tight">Digital Engineering <br>& Full Stack Edge</h3>
+                    <p class="text-slate-400 mb-10 text-lg leading-relaxed">
+                        Genom Lexicon (2024-2025) har jag byggt en teknisk bas som gör att jag kan leda digital transformation och kommunicera sömlöst med utvecklingsteam.
+                    </p>
+                    
+                    <div class="pt-8 border-t border-white/10">
+                        <p class="text-[10px] font-bold text-blue-400 uppercase mb-4 tracking-widest uppercase">Modern Tech Stack:</p>
+                        <div class="text-sm text-slate-200 font-bold flex flex-wrap gap-y-2">
+                            <span>Java Spring Boot</span> <span class="text-blue-500 mx-3 opacity-50">/</span>
+                            <span>REST APIs</span> <span class="text-blue-500 mx-3 opacity-50">/</span>
+                            <span>Cloud (AWS/Azure)</span> <span class="text-blue-500 mx-3 opacity-50">/</span>
+                            <span>React Ecosystem</span>
+                        </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-                    <div class="md:col-span-4">
-                        <p class="text-sm font-bold text-slate-400 uppercase">2006 — 2008</p>
-                        <h4 class="text-xl font-bold text-slate-700">Department Manager</h4>
-                        <p class="text-slate-500 font-medium">Media Markt</p>
-                    </div>
-                    <div class="md:col-span-8">
-                        <p class="text-slate-600 leading-relaxed">
-                            Ansvarig för försäljning och exponering av mobila tjänster och kontorsprodukter. Drev framgångsrika säljstrategier i en av Sveriges mest konkurrensutsatta retail-miljöer.
-                        </p>
+
+                <div class="space-y-10">
+                    <h3 class="text-xs font-black text-blue-600 uppercase tracking-[0.2em]">Academic Foundation</h3>
+                    <div class="space-y-8">
+                        <div class="relative pl-6 border-l-2 border-slate-100">
+                            <p class="text-[10px] font-black text-slate-400 uppercase mb-1">IHM Business School</p>
+                            <h4 class="text-lg font-bold">Digital Marketing & Sales Analytics</h4>
+                            <p class="text-sm text-slate-500">Fokus på datadriven försäljning och strategisk marknadsanalys.</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-100">
+                            <p class="text-[10px] font-black text-slate-400 uppercase mb-1">FEI</p>
+                            <h4 class="text-lg font-bold">Strategisk Inköpare</h4>
+                            <p class="text-sm text-slate-500">Expertis inom förhandling, sourcing och logistikflöden.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-card grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h3 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-8">Teknisk Transformation</h3>
-                <div class="p-8 bg-slate-900 rounded-2xl text-white">
-                    <p class="text-blue-400 font-bold text-xs uppercase mb-2">Lexicon | 2024-2025</p>
-                    <h4 class="text-xl font-bold mb-4">Full Stack Development Course</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Specialisering inom Java, Spring Boot och AI-integrationer. Denna kompetens möjliggör djupare förståelse för digital transformation och förmågan att leda tekniska team mot affärsmål.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] bg-white/10 px-2 py-1 rounded">JAVA</span>
-                        <span class="text-[10px] bg-white/10 px-2 py-1 rounded">SPRING BOOT</span>
-                        <span class="text-[10px] bg-white/10 px-2 py-1 rounded">AI STRATEGY</span>
+        <section class="section-card">
+            <h3 class="text-xs font-black text-blue-600 uppercase tracking-[0.3em] mb-12">Experience</h3>
+            <div class="space-y-16">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <div class="md:col-span-4">
+                        <h4 class="text-2xl font-black text-slate-900">Head of Back Office</h4>
+                        <p class="text-blue-600 font-bold text-sm uppercase">TestSeek | 2012 — NUVALDET</p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <p class="text-slate-600 text-lg leading-relaxed">
+                            Ansvarig för internationell produktion och Big Data-processering. Har drivit digitaliseringen av interna processer och byggt upp skalbara flöden för globala kunder.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <h3 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-8">Affärsakademisk Grund</h3>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="w-1 h-12 bg-blue-100 rounded-full"></div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase">IHM Business School</p>
-                            <h4 class="font-bold text-slate-800">Digital Marketing & Sales Analytics</h4>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <div class="md:col-span-4">
+                        <h4 class="text-xl font-bold text-slate-800">Department Manager</h4>
+                        <p class="text-slate-400 font-bold text-sm uppercase">Media Markt | 2006 — 2008</p>
                     </div>
-                    <div class="flex gap-4">
-                        <div class="w-1 h-12 bg-blue-100 rounded-full"></div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase">FEI</p>
-                            <h4 class="font-bold text-slate-800">Strategisk Inköpare</h4>
-                        </div>
+                    <div class="md:col-span-8">
+                        <p class="text-slate-500 leading-relaxed">
+                            Ansvarig för försäljning och avdelningsstyrning inom kontor och mobila tjänster. Drev säljresultat och kundnöjdhet i en miljö med högt tempo.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -153,9 +153,16 @@
 
     </main>
 
-    <footer class="max-w-6xl mx-auto px-6 py-20 text-center border-t border-gray-100">
-        <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.5em] mb-4">Herman Engdahl</p>
-        <p class="text-slate-500 text-sm italic">Business Development | Digital Transformation | AI Strategy</p>
+    <footer class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row justify-between items-center border-t border-slate-50">
+        <div class="text-center md:text-left">
+            <p class="text-2xl font-black tracking-tighter mb-2 italic underline decoration-blue-500">Herman Engdahl</p>
+            <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em]">Business Development | Mar-Tech | AI Strategist</p>
+        </div>
+        <div class="mt-8 md:mt-0">
+            <a href="mailto:herman.engdahl@gmail.com" class="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 transition-all shadow-xl">
+                Låt oss prata strategi
+            </a>
+        </div>
     </footer>
 
 </body>
