@@ -6,9 +6,20 @@
     <title>Herman Engdahl - CV</title>
     <script src="https://tailwindcss.com"></script>
     <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Font Awesome för ikoner -->
+    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .skill-bar-bg {
+            background-color: #e5e7eb;
+        }
+        .skill-bar-fill {
+            background-color: #3b82f6;
+            transition: width 0.5s ease-in-out;
+        }
         .skill-tag {
             display: inline-block;
             background-color: #dbeafe;
@@ -19,6 +30,7 @@
             font-weight: 500;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -26,58 +38,54 @@
     <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         
         <!-- HEADER -->
-        <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 sm:p-8 md:p-10 flex flex-col sm:flex-row items-center justify-between">
+        <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 sm:p-8 md:p-10 flex flex-col sm:flex-row items-center justify-between rounded-t-lg">
             <div class="text-center sm:text-left mb-4 sm:mb-0">
                 <h1 class="text-3xl sm:text-4xl font-bold mb-1">Herman Engdahl</h1>
                 <p class="text-xl sm:text-2xl font-light">Business Development Manager | SaaS & Strategic Sourcing</p>
             </div>
-            <img src="Herman.png" alt="Herman Engdahl" class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover">
+            <div class="flex items-center space-x-4">
+                <img src="Herman.png" alt="Herman Engdahl" class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover">
+            </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 sm:p-8">
             <!-- KONTAKT -->
-            <div class="md:col-span-1 bg-gray-50 p-6 rounded-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Kontakt</h2>
-                <ul class="text-gray-700 space-y-3 text-sm">
-                    <li><i class="fa-solid fa-phone text-blue-600 mr-2"></i><strong>Tel:</strong> 0727-111109</li>
-                    <li><i class="fa-solid fa-envelope text-blue-600 mr-2"></i><strong>E-post:</strong> herman.engdahl@gmail.com</li>
-                    <li><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i><strong>Ort:</strong> Göteborg</li>
-                    <li><i class="fa-brands fa-linkedin text-blue-600 mr-2"></i><a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">LinkedIn Profile</a></li>
-                </ul>
-                
-                <h2 class="text-xl font-semibold text-gray-800 mt-8 mb-4 border-b pb-2">Språk</h2>
-                <ul class="text-gray-700 space-y-1 text-sm">
-                    <li>Svenska: Modersmål</li>
-                    <li>Engelska: Flytande</li>
-                    <li>Franska: Goda kunskaper</li>
-                    <li>Tyska: Baskunskaper</li>
+            <div class="md:col-span-1 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Kontakt</h2>
+                <ul class="text-gray-700 space-y-2">
+                    <li><i class="fa-solid fa-phone text-blue-600 mr-2"></i><strong class="font-medium">Telefon:</strong> 0727-111109</li>
+                    <li><i class="fa-solid fa-envelope text-blue-600 mr-2"></i><strong class="font-medium">E-post:</strong> herman.engdahl@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i><strong class="font-medium">Ort:</strong> Göteborg</li>
+                    <li><i class="fa-brands fa-linkedin text-blue-600 mr-2"></i><strong class="font-medium">LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">Herman.engdahl</a></li>
                 </ul>
             </div>
 
-            <!-- PROFIL -->
-            <div class="md:col-span-2 bg-gray-50 p-6 rounded-lg">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Målsättning & Profil</h2>
-                <div class="text-gray-700 leading-relaxed space-y-4 text-sm">
+            <!-- MÅLSÄTTNING & PROFIL -->
+            <div class="md:col-span-2 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Målsättning & Profil</h2>
+                <div class="text-gray-700 leading-relaxed space-y-4">
                     <p>Jag är en affärsdriven ledare som bygger broar mellan komplex teknik, strategiskt inköp och hållbar tillväxt. Med bakgrund inom retail och SaaS-försäljning ser jag affären genom kundens (inköparens) ögon.</p>
-                    <ul class="list-disc list-inside space-y-2">
+                    <ul class="list-disc list-inside space-y-2 text-sm">
                         <li><strong>Strategisk Affärsutveckling:</strong> Implementerar lösningar med ett ”Inköps-DNA” som navigerar komplexa säljcykler på C-level.</li>
                         <li><strong>AI & Transformation:</strong> Med teknisk grund i Java/Spring Boot fokuserar jag på hur AI revolutionerar e-handeln genom datadrivna beslut.</li>
                         <li><strong>Kommersiellt Ledarskap:</strong> Strategisk analys kombinerat med operativt driv för att maximera kundvärde och ROI.</li>
                     </ul>
                 </div>
-                <p class="text-center mt-6 p-3 bg-blue-100 text-blue-800 rounded-md">
-                    <a href="mailto:herman.engdahl@gmail.com" class="font-semibold hover:underline">Redo för nästa steg? Skicka ett mail här!</a>
+                <p class="text-center mt-6 p-3 bg-blue-100 text-blue-800 rounded-md shadow-sm">
+                    <strong class="font-semibold">Redo för nästa steg?</strong> Kontakta mig gärna för en diskussion om hur jag kan bidra till er framgång.
+                    <a href="mailto:herman.engdahl@gmail.com" class="text-blue-600 hover:underline font-medium ml-2">Skicka mail!</a>
                 </p>
             </div>
         </div>
 
-        <!-- ERFARENHET -->
+        <!-- ARBETSLIVSERFARENHET -->
         <div class="p-6 sm:p-8">
             <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Arbetslivserfarenhet</h2>
-            <div class="mb-8 border-l-4 border-blue-600 pl-4">
-                <h3 class="text-xl font-bold">Head of Back Office</h3>
+
+            <div class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-bold text-gray-800"><i class="fa-solid fa-briefcase text-gray-600 mr-3"></i>Head of Back Office</h3>
                 <p class="text-blue-600 font-medium">TestSeek | 2012-09 – Idag</p>
-                <ul class="list-disc list-inside text-gray-700 mt-2 text-sm space-y-1">
+                <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2 text-sm">
                     <li>Leda internationellt team om fem medarbetare.</li>
                     <li>Säkerställa kvalitet genom utbildning och processimplementering.</li>
                     <li>Analys av big data med komplexa egenutvecklade verktyg.</li>
@@ -86,51 +94,58 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="p-4 bg-gray-50 rounded">
+                <div class="p-4 bg-gray-50 rounded shadow-sm">
                     <h4 class="font-bold">Telia Butik Backaplan</h4>
-                    <p class="text-xs text-blue-600">2010 – 2012 / 2006 (Säljare)</p>
+                    <p class="text-xs text-blue-600">Säljare & Exponeringsansvarig | 2006 – 2012</p>
                 </div>
-                <div class="p-4 bg-gray-50 rounded">
-                    <h4 class="font-bold">Media Markt</h4>
-                    <p class="text-xs text-blue-600">2006 – 2008 (Avdelningsansvarig)</p>
+                <div class="p-4 bg-gray-50 rounded shadow-sm">
+                    <h4 class="font-bold">Media Markt, Göteborg</h4>
+                    <p class="text-xs text-blue-600">Avdelningsansvarig kontor/mobilt | 2006 – 2008</p>
                 </div>
-                <div class="p-4 bg-gray-50 rounded">
+                <div class="p-4 bg-gray-50 rounded shadow-sm">
                     <h4 class="font-bold">FMP Publishing AB</h4>
-                    <p class="text-xs text-blue-600">2008 – 2009 (Data Quality)</p>
+                    <p class="text-xs text-blue-600">Data Quality Controller | 2008 – 2009</p>
                 </div>
-                <div class="p-4 bg-gray-50 rounded">
+                <div class="p-4 bg-gray-50 rounded shadow-sm">
                     <h4 class="font-bold">Clas Ohlsson / SanDisk</h4>
-                    <p class="text-xs text-blue-600">2008 – 2010 (Säljare/Merchandiser)</p>
+                    <p class="text-xs text-blue-600">Säljare & Merchandiser | 2008 – 2010</p>
                 </div>
             </div>
         </div>
 
-        <!-- SKILLS -->
-        <div class="p-6 sm:p-8 bg-gray-50">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Färdigheter</h2>
-            <div class="flex flex-wrap">
-                <span class="skill-tag">Affärsutveckling</span>
-                <span class="skill-tag">SaaS Försäljning</span>
-                <span class="skill-tag">Strategiskt Inköp</span>
-                <span class="skill-tag">AI & Machine Learning</span>
-                <span class="skill-tag">Java & Spring Boot</span>
-                <span class="skill-tag">Digital Marketing</span>
-                <span class="skill-tag">Dataanalys</span>
+        <!-- UTBILDNING & SKILLS -->
+        <div class="p-6 sm:p-8 border-t border-gray-100">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Utbildning & Kompetens</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <h3 class="font-bold">Full Stack Development Course</h3>
+                        <p class="text-blue-600 italic">Lexicon | 2024 – 2025</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Digital Marketing & Sales Analytics</h3>
+                        <p class="text-blue-600 italic">IHM Business School | 2017 – 2019</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Strategisk Inköpare</h3>
+                        <p class="text-blue-600 italic">FEI | 2010 – 2011</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap content-start">
+                    <span class="skill-tag">Affärsutveckling</span>
+                    <span class="skill-tag">SaaS Sales</span>
+                    <span class="skill-tag">Strategic Sourcing</span>
+                    <span class="skill-tag">AI & Machine Learning</span>
+                    <span class="skill-tag">E-commerce</span>
+                    <span class="skill-tag">Java / Spring Boot</span>
+                    <span class="skill-tag">Data Analysis</span>
+                </div>
             </div>
         </div>
 
-        <!-- UTBILDNING -->
-        <div class="p-6 sm:p-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 pb-2 border-blue-600">Utbildning</h2>
-            <div class="space-y-4 text-sm">
-                <div><h3 class="font-bold">Full Stack Development Course</h3><p class="text-blue-600">Lexicon | 2024 – 2025</p></div>
-                <div><h3 class="font-bold">Digital Marketing & Sales Analytics</h3><p class="text-blue-600">IHM Business School | 2017 – 2019</p></div>
-                <div><h3 class="font-bold">Strategisk Inköpare</h3><p class="text-blue-600">FEI | 2010 – 2011</p></div>
-            </div>
-        </div>
-
+        <!-- FOOTER -->
         <div class="bg-gray-800 text-white p-6 text-center text-xs">
-            <p>© 2025 Herman Engdahl. Innehar B-körkort. Referenser lämnas på begäran.</p>
+            <p>© 2025 Herman Engdahl. Innehar B-körkort och egen bil. Referenser lämnas på begäran.</p>
         </div>
     </div>
 </body>
